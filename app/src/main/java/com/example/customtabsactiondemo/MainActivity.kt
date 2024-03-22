@@ -72,7 +72,7 @@ class MainActivity : ComponentActivity() {
 
         val intent = CustomTabsIntent.Builder()
             .setShareState(CustomTabsIntent.SHARE_STATE_OFF)
-            .setActionButton(shareIcon, shareDescription, pendingIntent, true)
+            .setActionButton(shareIcon, shareDescription, pendingIntent, false)
             .build()
         intent.launchUrl(this@MainActivity, Uri.parse(url))
     }
